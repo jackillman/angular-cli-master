@@ -1,0 +1,15 @@
+<form #loginForm="ngForm" >
+  <h2>Аутентификация</h2>
+
+  <div class="input form-group">
+    <label for="">Username</label>
+    <input type="text" name="user" ngModel>
+  </div>
+
+  <div class="input">
+      <label for="">Password</label>
+      <input type="password" name="pass" ngModel>
+    </div>
+    <input class="input btn" type="button" value="Login" (click)="loginUser(loginForm)">
+
+</form>
